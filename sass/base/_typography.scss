@@ -1,0 +1,39 @@
+
+.heading-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+    &--primary{
+        color: $white;
+        text-transform: uppercase;
+
+        &-main{
+            display: block;
+            font-size: 6rem;
+            font-weight: 400;
+            letter-spacing: 3.15rem;
+            animation-name: headmove;
+            animation-duration: 1s;
+            backface-visibility: hidden;
+            animation-timing-function: ease-out;
+            }
+
+            &-sub{
+                display: block;
+                font-weight:400;
+                letter-spacing: 2rem;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                animation-name: headsubmove;
+                animation-duration: 1s;
+                backface-visibility: hidden;
+                animation-timing-function: ease-out;
+            
+            }
+
+            
+    }
+}

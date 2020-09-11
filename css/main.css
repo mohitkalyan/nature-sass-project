@@ -1,96 +1,3 @@
-/*
-COLORS:
-
-$Light green: #7ed56f;
-$Medium green: #55c57a;
-$Dark green: #28b485;
-
-*/
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Late",sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  color: #777;
-  padding: 1.5rem;
-}
-
-.header {
-  height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(126, 213, 111, 0.5)), to(rgba(85, 197, 122, 0.5))), url(../img/hero.jpg);
-  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.5), rgba(85, 197, 122, 0.5)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  position: relative;
-}
-
-.header__logo-box {
-  position: absolute;
-  top: 3rem;
-  left: 3rem;
-}
-
-.header__logo {
-  height: 3.5rem;
-}
-
-.heading-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.heading-box--primary {
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.heading-box--primary-main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.15rem;
-  -webkit-animation-name: headmove;
-          animation-name: headmove;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-}
-
-.heading-box--primary-sub {
-  display: block;
-  font-weight: 400;
-  letter-spacing: 2rem;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  -webkit-animation-name: headsubmove;
-          animation-name: headsubmove;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-}
-
 @-webkit-keyframes headmove {
   0% {
     -webkit-transform: translateX(-10rem);
@@ -185,6 +92,72 @@ body {
   }
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Late",sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #777;
+  padding: 1.5rem;
+}
+
+.heading-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-box--primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-box--primary-main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.15rem;
+  -webkit-animation-name: headmove;
+          animation-name: headmove;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.heading-box--primary-sub {
+  display: block;
+  font-weight: 400;
+  letter-spacing: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  -webkit-animation-name: headsubmove;
+          animation-name: headsubmove;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -244,4 +217,25 @@ body {
           animation: buttonmove 1s ease-in-out 0.75s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+}
+
+.header {
+  height: 95vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(126, 213, 111, 0.5)), to(rgba(85, 197, 122, 0.5))), url(../img/hero.jpg);
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.5), rgba(85, 197, 122, 0.5)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: relative;
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.header__logo {
+  height: 3.5rem;
 }

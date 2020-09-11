@@ -1,0 +1,39 @@
+@keyframes headmove {
+    0%{
+        transform: translateX(-10rem);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(1rem);    
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes headsubmove {
+    0%{
+        transform: translateX(10rem);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(-1rem);
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes buttonmove {
+    0%{
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
