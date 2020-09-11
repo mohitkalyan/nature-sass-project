@@ -11,12 +11,15 @@ $Dark green: #28b485;
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  font-size: 10px; }
+
 body {
   font-family: "Late",sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #777;
-  padding: 15px; }
+  padding: 1.5rem; }
 
 .header {
   height: 95vh;
@@ -28,11 +31,11 @@ body {
 
 .header__logo-box {
   position: absolute;
-  top: 30px;
-  left: 30px; }
+  top: 3rem;
+  left: 3rem; }
 
 .header__logo {
-  height: 35px; }
+  height: 3.5rem; }
 
 .heading-box {
   position: absolute;
