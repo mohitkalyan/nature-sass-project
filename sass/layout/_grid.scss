@@ -1,6 +1,6 @@
 .row{
     max-width:$grid-width;
-    background-color:#eee;
+    
     margin: 0 auto;
     
 
@@ -11,7 +11,7 @@
     @include clear-fix;
 
     [class^="col-"]{
-        background-color: orangered;
+       
         float: left;
     
     
