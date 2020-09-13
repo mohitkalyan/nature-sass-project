@@ -54,3 +54,19 @@
     }
     
 }
+
+.heading-tertiary{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.paragraph{
+    font-size: 1.6rem;
+    text-align: justify;
+    line-height: 3rem;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
