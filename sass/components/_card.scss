@@ -1,0 +1,102 @@
+.card{
+    height: 50rem;
+    position: relative;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    
+   
+
+    &__side{
+        
+        transition: all 1s ease;
+        color: white;
+        height: 50rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba($color: #000000, $alpha: .5);
+        overflow: hidden;
+
+
+
+        &--front{
+            
+        }
+        &--back{
+            transform: rotateY(180deg);
+
+            &-1{
+                background-image:linear-gradient(to right bottom,
+                rgba($orange, 1), rgba($orange-light, 1));
+            }
+        }
+    }
+
+    &:hover &__side--front {
+    transform: rotateY(-180deg);
+
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    
+    }
+
+    &__picture{
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        &--1{
+            background-image:linear-gradient(to right bottom,
+            rgba($orange, 1), rgba($orange-light, 1)), url(../img/nat-5.jpg);
+        }
+    }
+
+    &__heading{
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color:$white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        text-align: right;
+        width: 75%;
+        display: block;
+    }
+
+    &__heading--span{
+        padding: 1rem 1.5rem;
+        box-decoration-break: clone;
+        &--1{
+            background-image:linear-gradient(to right bottom,
+            rgba($orange, .8), rgba($orange-light, .8));
+        }
+    }
+
+    &__details{
+        
+
+        ul{
+        list-style: none;
+        width: 80%;
+        color:$grey;
+        margin: 0 auto;
+        
+
+            li{
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child){
+                    border-bottom: 1px solid rgba($color: $grey, $alpha: .1);
+                }
+            }
+        }
+    }
+}
