@@ -37,6 +37,17 @@
         }
     }
 
+    &--green{
+        background: $Medium_green;
+        color: $white;
+
+        &::after{
+            content: "";
+            display: inline-block;
+            background-color:$Medium_green;
+        }
+    }
+
     &::after{
         content: "";
         display: inline-block;
