@@ -5,8 +5,9 @@
         url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 99.5% 81.4%,0 100%);
     position: relative;
+    border-radius: 10px;
 
     &__logo-box{
         position: absolute;

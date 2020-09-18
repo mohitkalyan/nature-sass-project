@@ -1,0 +1,9 @@
+.story {
+  width: 75%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
+  background-color: red;
+  border-radius: 3px;
+  padding: 6rem;
+}
