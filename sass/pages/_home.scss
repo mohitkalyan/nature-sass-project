@@ -30,6 +30,7 @@
 .section-stories{
     padding: 10rem 0;
     position: relative;
+    border-radius: 10px;
 
     &__video{
         width: 100%;
@@ -40,6 +41,8 @@
         object-fit: cover;
         opacity: 0.1;
         z-index: -1;
+        border-radius: 10px;
+
     }
 }
 
@@ -47,7 +50,7 @@
     padding: 16rem 0;
     background-image: linear-gradient(to right bottom, $Light_green, $Medium_green);
     border-radius: 10px;
-    margin-top: -1rem;
+    //margin-top: -1rem;
 }
 
 .book{
