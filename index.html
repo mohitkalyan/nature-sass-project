@@ -18,7 +18,7 @@
             <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
             <label for="navi-toggle" class="navigation__button">
                 <span class="navigation__icon">
-                    &nbsp;
+                
                 </span>
             </label>
             <div class="navigation__background">&nbsp;</div>
@@ -146,7 +146,7 @@
         </section>
         <!-- ============Section Tour===========-->
 
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-centre-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Most popular tours
@@ -184,7 +184,7 @@
                                     <p class="card__price-only">only</p>                                    
                                     <p class="card__price-value">$297</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now</a>
+                                <a href="#popup" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -222,7 +222,7 @@
                                     <p class="card__price-only">only</p>                                    
                                     <p class="card__price-value">$497</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now</a>
+                                <a href="#popup" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -260,7 +260,7 @@
                                     <p class="card__price-only">only</p>                                    
                                     <p class="card__price-value">$897</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now</a>
+                                <a href="#popup" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -414,10 +414,34 @@
                 <p class="footer__copyright">
                     Built by <a href="#" class="footer__link">Mohit</a>. This website was the part of my project which was built during my advance CSS course. It was not designed by me, but all the development is done by me.
                 </p>
-            </div>
-            
+            </div>           
         </div>
     </footer>
+
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="./img/nat-8.jpg" alt="tour image" class="popup__img">
+                <img src="./img/nat-9.jpg" alt="tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &dash; Please read these terms before booking</h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel nisi eos fugiat eveniet quibusdam aperiam dolorem iusto inventore, nobis voluptas voluptate assumenda ducimus eius perspiciatis libero facilis sapiente rem!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nihil sit! Repudiandae, rsint eum quasi molestias rem facilis, ipsa maxime, modi culpa! Porro.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium similique quo obcaecati quidem, necessitatibus ipsa est beatae reiciendis saepe delectus provident illo doloribus nulla quasi ipsum a officia facilis autem!
+                    
+                </p>
+                <a href="#" class="btn btn--green">Book Now</a>
+
+            </div>
+        </div>
+    </div>
+
+
 
 
         <!-- ===========Section for test Grid================= -->

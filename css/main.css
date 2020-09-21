@@ -714,6 +714,95 @@ body {
   opacity: 1;
 }
 
+.popup {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2500;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.popup__content {
+  width: 75%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.4);
+          transform: translate(-50%, -50%) scale(0.4);
+  display: table;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.popup:target .popup__content {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.popup__left {
+  width: 33%;
+  display: table-cell;
+  overflow: hidden;
+}
+
+.popup__img {
+  display: block;
+  width: 100%;
+}
+
+.popup__right {
+  width: 66.666666%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 3rem 5rem;
+}
+
+.popup__close {
+  text-decoration: none;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+}
+
+.popup__close:hover {
+  color: #7ed56f;
+}
+
+.popup__text {
+  margin-bottom: 4rem;
+  font-size: 1.4rem;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
+  -webkit-column-rule: 1px solid #eeee;
+          column-rule: 1px solid #eeee;
+  hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
 .header {
   height: 95vh;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(126, 213, 111, 0.8)), to(rgba(85, 197, 122, 0.8))), url(../img/hero.jpg);
@@ -776,8 +865,8 @@ body {
   top: 0;
   left: 0;
   opacity: 0;
-  -webkit-transition: all 1s cubic-bezier(0, 1.6, 0.72, 0.99);
-  transition: all 1s cubic-bezier(0, 1.6, 0.72, 0.99);
+  -webkit-transition: all 1s 0.2s cubic-bezier(0, 1.6, 0.72, 0.99);
+  transition: all 1s 0.2s cubic-bezier(0, 1.6, 0.72, 0.99);
   visibility: collapse;
 }
 
