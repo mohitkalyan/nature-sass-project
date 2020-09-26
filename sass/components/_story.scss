@@ -8,6 +8,14 @@
     padding-left: 9rem;
     transform: skewX(-12deg);
 
+    @include respond(tab-port){
+    width: 90%;
+    transform: skewX(0deg);
+    display:block;
+    text-align: center;
+    padding: 3.5rem; 
+    }
+
     &__shape{
         width: 15rem;
         height: 15rem;
@@ -17,6 +25,16 @@
         transform: translateX(-3rem) skewX(12deg);
         position: relative;
         overflow: hidden;
+
+        @include respond(tab-port){
+            transform: translateX(0rem) skewX(0deg);
+            float: none;
+            shape-outside: none;
+            display: inline-block;
+            text-align: center  ;
+
+
+            }
        
     }
 
@@ -30,6 +48,9 @@
 
     &__text{
         transform: skewX(12deg);
+        @include respond(tab-port){
+            transform: skewX(0);
+        }
     }
 
     &__caption{

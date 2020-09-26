@@ -12,6 +12,7 @@
         background-image: linear-gradient(to right, $Light_green , $Medium_green );
         display: inline-block;
         -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
 
     }
