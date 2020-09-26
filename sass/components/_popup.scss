@@ -121,8 +121,11 @@
 
         @include respond(tab-port){
             column-count: 1;
-            column-gap: none;
-            column-rule: 0;
+            text-align: justify;
+            max-height: 10vh;
+            overflow: auto;
+        
+            
 
         }
     }
