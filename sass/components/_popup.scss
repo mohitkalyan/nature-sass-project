@@ -29,6 +29,11 @@
         overflow: hidden;
         border-radius: 10px;
         transition: all 0.2s;
+
+        @include respond(tab-port){
+            display: block;
+        }
+
     }
 
     &:target &__content{
@@ -40,13 +45,37 @@
         display: table-cell;
         overflow: hidden;
 
+        @include respond(tab-port){
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding-top: 4rem;
+        }
+
     }
 
     &__img{
         display: block;
         width: 100%;
         
-       
+        @include respond(tab-port){
+            display: inline-block;
+            position: relative;
+            height: 100%;
+            width: 40%;
+        }
+
+        &--1{
+            @include respond(tab-port){
+                transform: scale(.8);
+            }
+        }
+
+        &--2{
+            @include respond(tab-port){
+                transform: scale(.77);
+            }
+        }
 
     }
 
@@ -55,6 +84,14 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(tab-port){
+            display: block;
+            width: 100%;
+            vertical-align: none;
+            text-align: center;
+            padding: 3rem;
+        }
 
     }
 
@@ -81,5 +118,12 @@
         -moz-hyphens: auto;
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
+
+        @include respond(tab-port){
+            column-count: 1;
+            column-gap: none;
+            column-rule: 0;
+
+        }
     }
 }
