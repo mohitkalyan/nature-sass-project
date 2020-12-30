@@ -1033,6 +1033,13 @@ body {
   right: 2.5rem;
 }
 
+@media (max-width: 56.25em) {
+  .popup__close {
+    top: .5rem;
+    right: 1.5rem;
+  }
+}
+
 .popup__close:hover {
   color: #7ed56f;
 }
